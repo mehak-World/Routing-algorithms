@@ -26,7 +26,7 @@ public class Graph {
         Set<String> edgeSet = new HashSet<>();
 
         for (int i = 0; i < n - 1; i++) {
-            Edge e = new Edge(i, i + 1, rand.nextInt(10));
+            Edge e = new Edge(i, i + 1, rand.nextInt(10)+1);
             edges.add(e);
             edgeSet.add(i + "-" + (i + 1));
         }
